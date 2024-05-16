@@ -1,0 +1,15 @@
+@model Product
+
+<div class="container-fluid">
+
+    <ul class="card">
+        <li class="card-header">@Model.Name</li>
+        <li class="card-body">@Model.Description</li>
+        <li class="card-footer">@Model.Price</li>
+
+    </ul>
+    <a asp-controller="Product" asp-action="Index" class="btn btn-dark" style="width:150px">
+        Back
+    </a>
+
+</div>

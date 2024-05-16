@@ -1,0 +1,38 @@
+@model List<Product>
+
+
+
+@if (TempData["success"] != null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript">toastr.success('@TempData["success"]');</script>
+
+}
+<div class="container-fluid">
+    <h1>Products</h1>
+    @{
+        foreach (var obj in Model.OrderBy(p => p.Name))
+        {
+            <div class="row">
+                <div class="card">>
+                    <ul>
+                        <div class="card-body">
+                            <li class="primary">@obj.Name</li>
+                            <li>@obj.Price $</li>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-dark" asp-area="" asp-controller="Product" asp-action="ProductDetails"
+                                asp-route-id=@obj.ProductID>details</a>
+                            <a class="btn btn-primary" asp-area="" asp-controller="Product" asp-action="ProductEdit"
+                                asp-route-id="@obj.ProductID">Edit</a>
+                            <a class="btn btn-danger" asp-area="" asp-controller="Product" asp-action="ProductRemove"
+                                asp-route-id="@obj.ProductID">Remove</a>
+                            <a class="btn btn-success" asp-area="" asp-controller="Product" asp-action="ProductOrder">Order</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        }
+    }
+</div>
