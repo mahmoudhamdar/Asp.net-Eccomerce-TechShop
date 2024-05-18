@@ -1,0 +1,42 @@
+@using WebApplication1.Areas.Admin.Models
+@model List<Category>
+
+
+
+@if (TempData["success"] != null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript">toastr.success('@TempData["success"]');</script>
+
+}
+<div class="container-fluid">
+    <h1>Category List</h1>
+    <a class="btn btn-success" asp-area="Admin" asp-controller="Category" asp-action="CategoryAdd">Add
+        new Product</a>
+    @{
+        foreach (var obj in Model.OrderBy(p => p.Name))
+        {
+            <div class="row">
+                <div class="card">>
+                    <ul>
+
+                        <div class="card-body">
+                            <li class="primary">@obj.Name</li>
+                            <li class="primary">@obj.DisplayOrder</li>
+
+                        </div>
+                        <div class="card-footer">
+
+                            <a class="btn btn-primary" asp-area="Admin" asp-controller="Category" asp-action="CategoryEdit"
+                                asp-route-id="@obj.CategoryId">Edit</a>
+                            <a class="btn btn-danger" asp-area="Admin" asp-controller="Category" asp-action="CategoryRemove"
+                                asp-route-id="@obj.CategoryId">Remove</a>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        }
+    }
+</div>
