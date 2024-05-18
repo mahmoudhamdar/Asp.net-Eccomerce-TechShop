@@ -10,7 +10,9 @@
 
 }
 <div class="container-fluid">
-    <h1>Products</h1>
+    <h1>Products List</h1>
+    <a class="btn btn-success" asp-area="Admin" asp-controller="Product" asp-action="ProductAdd">Add
+        new Product</a>
     @{
         foreach (var obj in Model.OrderBy(p => p.Name))
         {
@@ -22,13 +24,16 @@
                             <li>@obj.Price $</li>
                         </div>
                         <div class="card-footer">
-                            <a class="btn btn-dark" asp-area="" asp-controller="Product" asp-action="ProductDetails"
+
+
+                            <a class="btn btn-dark" asp-area="Admin" asp-controller="Product" asp-action="ProductDetails"
                                 asp-route-id=@obj.ProductID>details</a>
-                            <a class="btn btn-primary" asp-area="" asp-controller="Product" asp-action="ProductEdit"
+                            <a class="btn btn-primary" asp-area="Admin" asp-controller="Product" asp-action="ProductEdit"
                                 asp-route-id="@obj.ProductID">Edit</a>
-                            <a class="btn btn-danger" asp-area="" asp-controller="Product" asp-action="ProductRemove"
+                            <a class="btn btn-danger" asp-area="Admin" asp-controller="Product" asp-action="ProductRemove"
                                 asp-route-id="@obj.ProductID">Remove</a>
-                            <a class="btn btn-success" asp-area="" asp-controller="Product" asp-action="ProductOrder">Order</a>
+                            <a class="btn btn-success" asp-area="Admin" asp-controller="Product"
+                                asp-action="ProductOrder">Order</a>
                         </div>
                     </ul>
                 </div>

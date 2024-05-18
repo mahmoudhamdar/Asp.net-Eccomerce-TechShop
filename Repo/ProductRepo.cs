@@ -16,11 +16,7 @@ namespace WebApplication1.Repo
             _db = db;
         }
 
-        public void save()
-        {
-            _db.SaveChanges();
 
-        }
         public void Update(Product product)
         {
             _db.Products.Update(product);

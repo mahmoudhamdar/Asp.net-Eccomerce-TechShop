@@ -11,19 +11,20 @@ using WebApplication1.Repo;
 using WebApplication1.Repo.IRepo;
 namespace WebApplication1.Controllers
 {
+    [Area("Admin")]
     public class ProductController : Controller
     {
 
-        private readonly IProductRepo _productRepo;
+        private readonly IUnitofwork _unitofwork;
 
-        public ProductController(IProductRepo productRepo)
+        public ProductController(IUnitofwork unitofwork)
         {
 
-            _productRepo = productRepo;
+            _unitofwork = unitofwork;
         }
         public IActionResult Index()
         {
-            List<Product> objProductList = _productRepo.GetAll().ToList();
+            List<Product> objProductList = _unitofwork.productRepo.GetAll().ToList();
 
             return View(objProductList);
         }
@@ -32,7 +33,7 @@ namespace WebApplication1.Controllers
             if (id == null || id == 0)
                 return NotFound();
 
-            Product? product = _productRepo.Get(p => p.ProductID == id);
+            Product? product = _unitofwork.productRepo.Get(p => p.ProductID == id);
             if (product == null)
                 return NotFound();
 
@@ -56,8 +57,8 @@ namespace WebApplication1.Controllers
             if (ModelState.IsValid)
             {
 
-                _productRepo.Add(product);
-                _productRepo.save();
+                _unitofwork.productRepo.Add(product);
+                _unitofwork.Save();
                 TempData["success"] = "A new " + product.Name + " is Added";
                 return RedirectToAction("Index");
             }
@@ -70,7 +71,7 @@ namespace WebApplication1.Controllers
             {
                 return NotFound();
             }
-            Product? productfromdb = _productRepo.Get(u => u.ProductID == id);
+            Product? productfromdb = _unitofwork.productRepo.Get(u => u.ProductID == id);
             if (productfromdb == null)
                 NotFound();
             return View(productfromdb);
@@ -80,8 +81,8 @@ namespace WebApplication1.Controllers
         {
             if (ModelState.IsValid)
             {
-                _productRepo.Update(pr);
-                _productRepo.save();
+                _unitofwork.productRepo.Update(pr);
+                _unitofwork.Save();
                 TempData["success"] = pr.Name + " is Updated";
                 return RedirectToAction("Index");
             }
@@ -91,7 +92,7 @@ namespace WebApplication1.Controllers
         {
             if (id == null || id == 0)
                 return NotFound();
-            Product? productfromdb = _productRepo.Get(p => p.ProductID == id);
+            Product? productfromdb = _unitofwork.productRepo.Get(p => p.ProductID == id);
             if (productfromdb == null)
                 return NotFound();
             return View(productfromdb);
@@ -99,8 +100,8 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public IActionResult ProductRemove(Product pr)
         {
-            _productRepo.Remove(pr);
-            _productRepo.save();
+            _unitofwork.productRepo.Remove(pr);
+            _unitofwork.Save();
             TempData["success"] = pr.Name + " is Removed";
             return RedirectToAction("Index");
         }

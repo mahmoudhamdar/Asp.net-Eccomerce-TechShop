@@ -6,10 +6,10 @@ a.navbar-brand[b-bddmc6yalx] {
   text-align: center;
   word-break: break-all;
 }
-
-a[b-bddmc6yalx] {
+/* 
+a {
   color: #0077cc;
-}
+} */
 
 .btn-primary[b-bddmc6yalx] {
   color: #fff;
