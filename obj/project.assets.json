@@ -4089,11 +4089,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abbas\\mvc\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\abbas\\Desktop\\mvc\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\abbas\\mvc\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "C:\\Users\\abbas\\Desktop\\mvc\\WebApplication1\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\abbas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abbas\\mvc\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Users\\abbas\\Desktop\\mvc\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\abbas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4116,11 +4116,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4152,7 +4147,7 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
+          "Microsoft.ASpNetCore.App": {
             "privateAssets": "none"
           },
           "Microsoft.NETCore.App": {

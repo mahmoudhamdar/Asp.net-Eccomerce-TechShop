@@ -7,6 +7,7 @@ namespace WebApplication1.Repo.IRepo
 {
     public interface IUnitofwork
     {
+        public ICategoryRepo categoryRepo { get; set; }
         IProductRepo productRepo { get; }
         void Save();
     }

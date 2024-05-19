@@ -14,6 +14,6 @@ namespace WebApplication1.Models
         public string Address { get; set; } = "";
 
         public List<Order> Orders { get; set; } = new();
-        public List<Payment> Payments { get; set; } = new();
+
     }
 }

@@ -50,10 +50,7 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public IActionResult ProductAdd(Product product)
         {
-            if (product.Name.Equals(product.Description))
-            {
-                ModelState.AddModelError("Name", "the Name can not be the same sa the Description");
-            }
+
             if (ModelState.IsValid)
             {
 
@@ -92,9 +89,9 @@ namespace WebApplication1.Controllers
         {
             if (id == null || id == 0)
                 return NotFound();
-            Product? productfromdb = _unitofwork.productRepo.Get(p => p.ProductID == id);
-            if (productfromdb == null)
-                return NotFound();
+            Product? productfromdb = _unitofwork.productRepo.Get(p =>  p.ProductID == id);
+           
+
             return View(productfromdb);
         }
         [HttpPost]

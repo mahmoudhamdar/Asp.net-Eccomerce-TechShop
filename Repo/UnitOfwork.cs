@@ -11,10 +11,12 @@ namespace WebApplication1.Repo
     {
         private ApplicationDbContext _db;
         public IProductRepo productRepo { get; private set; }
+        public ICategoryRepo categoryRepo { get; set; }
         public UnitOfwork(ApplicationDbContext db)
         {
             _db = db;
             productRepo = new ProductRepo(_db);
+            categoryRepo = new CategoryRepo(_db);
         }
 
 

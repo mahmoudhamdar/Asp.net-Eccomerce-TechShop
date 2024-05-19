@@ -17,14 +17,14 @@
         foreach (var obj in Model.OrderBy(p => p.Name))
         {
             <div class="row">
-                <div class="card">>
+                <div class="card">
                     <ul>
                         <div class="card-body">
                             <li class="primary">@obj.Name</li>
-                            <li>@obj.Price $</li>
+                            <li class="primary">@obj.Price $</li>
+
                         </div>
                         <div class="card-footer">
-
 
                             <a class="btn btn-dark" asp-area="Admin" asp-controller="Product" asp-action="ProductDetails"
                                 asp-route-id=@obj.ProductID>details</a>

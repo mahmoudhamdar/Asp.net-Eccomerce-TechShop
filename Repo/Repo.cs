@@ -34,7 +34,7 @@ namespace WebApplication1.Repo
             IQueryable<T> query = dbSet;
             query.Where(filter);
 
-            T? q = query.FirstOrDefault();
+            T? q = query.Where(filter).FirstOrDefault();
             if (q == null)
                 throw new ArgumentNullException();
             return q;

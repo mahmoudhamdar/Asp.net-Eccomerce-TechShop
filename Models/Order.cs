@@ -15,7 +15,7 @@ namespace WebApplication1.Models
         public User User { get; set; } = new();
 
         public List<OrderDetail> OrderDetails { get; set; } = new();
-        public Payment Payment { get; set; } = new();
-        public Shipping Shipping { get; set; } = new();
+
+
     }
 }
