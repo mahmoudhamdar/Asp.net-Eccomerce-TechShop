@@ -32,7 +32,7 @@ namespace WebApplication1.Repo
         public T Get(Expression<Func<T, bool>> filter)
         {
             IQueryable<T> query = dbSet;
-            query.Where(filter);
+          
 
             T? q = query.Where(filter).FirstOrDefault();
             if (q == null)

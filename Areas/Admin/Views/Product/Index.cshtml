@@ -9,15 +9,16 @@
     <script type="text/javascript">toastr.success('@TempData["success"]');</script>
 
 }
-<div class="container-fluid">
+<div class="container-fluid ">
     <h1>Products List</h1>
     <a class="btn btn-success" asp-area="Admin" asp-controller="Product" asp-action="ProductAdd">Add
         new Product</a>
+     <div class="row ">
     @{
         foreach (var obj in Model.OrderBy(p => p.Name))
         {
-            <div class="row">
-                <div class="card">
+           
+                <div class="card col-lg-4 col-md-6 col-sm-12 ">
                     <ul>
                         <div class="card-body">
                             <li class="primary">@obj.Name</li>
@@ -37,7 +38,8 @@
                         </div>
                     </ul>
                 </div>
-            </div>
+            
         }
-    }
+    }</div>
+    
 </div>
