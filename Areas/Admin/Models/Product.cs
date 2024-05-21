@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using WebApplication1.Areas.Admin.Models;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+
 namespace WebApplication1.Models
 {
     public class Product
@@ -16,11 +18,15 @@ namespace WebApplication1.Models
         public string Description { get; set; } = "";
         [Required]
         public decimal Price { get; set; }
+        [ValidateNever]
         public string ImgUrl { get; set; } = "";
         [Required]
         [Display(Name = "Category")]
         public int CategoryId;
+
         [ForeignKey("CategoryId")]
-        public Category Category = new();
+        [ValidateNever]
+        public Category Category { get; set; }
     }
+    
 }

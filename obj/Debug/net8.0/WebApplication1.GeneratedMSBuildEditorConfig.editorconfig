@@ -9,95 +9,95 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplication1
 build_property.RootNamespace = WebApplication1
-build_property.ProjectDir = C:\Users\abbas\Desktop\mvc\WebApplication1\
+build_property.ProjectDir = C:\Users\r01\RiderProjects\Asp.netEccomerce1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\abbas\Desktop\mvc\WebApplication1
+build_property.MSBuildProjectDirectory = C:\Users\r01\RiderProjects\Asp.netEccomerce1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/Category/CategoryAdd.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/Category/CategoryAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/Category/CategoryEdit.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/Category/CategoryEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/Category/CategoryRemove.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/Category/CategoryRemove.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlSZW1vdmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/Category/Index.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/Product/Index.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/Product/ProductAdd.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0QWRkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/Product/ProductDetails.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/Product/ProductDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/Product/ProductEdit.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/Product/ProductEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0RWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/Product/ProductOrder.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/Product/ProductOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0T3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/Product/ProductRemove.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/Product/ProductRemove.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0UmVtb3ZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/Product/ProductUpsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0VXBzZXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Customer/Views/Home/AboutUs.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Customer/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Customer/Views/Home/Index.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Customer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Customer/Views/_ViewImports.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Customer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Areas/Customer/Views/_ViewStart.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Areas/Customer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Views/Shared/Error.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Views/_ViewImports.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Views/_ViewStart.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/abbas/Desktop/mvc/WebApplication1/Views/Shared/_Layout.cshtml]
+[C:/Users/r01/RiderProjects/Asp.netEccomerce1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bddmc6yalx

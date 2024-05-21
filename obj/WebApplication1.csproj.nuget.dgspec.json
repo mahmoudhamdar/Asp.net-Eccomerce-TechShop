@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abbas\\Desktop\\mvc\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\r01\\RiderProjects\\Asp.netEccomerce1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abbas\\Desktop\\mvc\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\r01\\RiderProjects\\Asp.netEccomerce1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abbas\\Desktop\\mvc\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\r01\\RiderProjects\\Asp.netEccomerce1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\abbas\\Desktop\\mvc\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\abbas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abbas\\Desktop\\mvc\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\r01\\RiderProjects\\Asp.netEccomerce1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\r01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\r01\\RiderProjects\\Asp.netEccomerce1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\abbas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\r01\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -72,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\r01\\.dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

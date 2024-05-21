@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,6 +20,7 @@ namespace WebApplication1.Repo
         {
             _db = db;
             dbSet = _db.Set<T>();
+            _db.Products.Include(u => u.Category);
 
         }
         public void Add(T entity)
@@ -29,10 +30,17 @@ namespace WebApplication1.Repo
 
         }
 
-        public T Get(Expression<Func<T, bool>> filter)
+        public T Get(Expression<Func<T, bool>> filter,string? includeProperties=null)
         {
             IQueryable<T> query = dbSet;
-          
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includeProp in includeProperties
+                             .Split(new []{','},StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
 
             T? q = query.Where(filter).FirstOrDefault();
             if (q == null)
@@ -40,10 +48,17 @@ namespace WebApplication1.Repo
             return q;
         }
 
-        public IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAll(string? includeProperties=null)
         {
             IQueryable<T> query = dbSet;
-
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includeProp in includeProperties
+                             .Split(new []{','},StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
             return query.ToList();
         }
 

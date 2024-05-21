@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-</head>
+    <link rel="stylesheet" href="//cdn.datatables.net/2.0.7/css/dataTables.dataTables.min.css"/>
+    </head>
 
 <body>
     <header>
@@ -61,14 +62,16 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; @DateTime.Now.Year - Tech shop - <a asp-area="" asp-controller="Home" asp-action="Index">About
-                Us</a>
-        </div>
-    </footer>
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; @DateTime.Now.Year - Tech shop - <a asp-area="" asp-controller="Home" asp-action="Index">About
+            Us</a>
+    </div>
+</footer>
+<script src=" https://cdn.tiny.cloud/1/aave5f2mlgqkp6cd1p6ktncigxt4zt4d175qd0y2k3ptqltw/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

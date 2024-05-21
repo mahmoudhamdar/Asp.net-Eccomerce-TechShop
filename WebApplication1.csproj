@@ -6,8 +6,12 @@
   </PropertyGroup>
   <ItemGroup>
   <FrameworkReference Include="Microsoft.ASpNetCore.App"/>
+  <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\images\product\" />
   </ItemGroup>
 </Project>

@@ -11,7 +11,7 @@
 }
 <div class="container-fluid ">
     <h1>Products List</h1>
-    <a class="btn btn-success" asp-area="Admin" asp-controller="Product" asp-action="ProductAdd">Add
+    <a class="btn btn-success" asp-area="Admin" asp-controller="Product" asp-action="ProductUpsert">Add
         new Product</a>
      <div class="row ">
     @{
@@ -23,13 +23,14 @@
                         <div class="card-body">
                             <li class="primary">@obj.Name</li>
                             <li class="primary">@obj.Price $</li>
+                            <li class="primary">@obj.Category.Name $</li>
 
                         </div>
                         <div class="card-footer">
 
                             <a class="btn btn-dark" asp-area="Admin" asp-controller="Product" asp-action="ProductDetails"
                                 asp-route-id=@obj.ProductID>details</a>
-                            <a class="btn btn-primary" asp-area="Admin" asp-controller="Product" asp-action="ProductEdit"
+                            <a class="btn btn-primary" asp-area="Admin" asp-controller="Product" asp-action="ProductUpsert"
                                 asp-route-id="@obj.ProductID">Edit</a>
                             <a class="btn btn-danger" asp-area="Admin" asp-controller="Product" asp-action="ProductRemove"
                                 asp-route-id="@obj.ProductID">Remove</a>
