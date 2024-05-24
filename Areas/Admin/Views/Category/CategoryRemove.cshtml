@@ -15,8 +15,12 @@
             <input asp-for="Name" disabled class="form-control" />
         </div>
         <div class="mb-3">
-            <label asp-for="DisplayOrder"></label>
-            <input asp-for="DisplayOrder" disabled class="form-control" />
+                    <label asp-for="DisplayOrder"></label>
+                    <input asp-for="DisplayOrder" disabled class="form-control" />
+                </div>
+        <div class="mb-3">
+            <label asp-for="CreatedDateTime"></label>
+            <input asp-for="CreatedDateTime" disabled class="form-control" />
         </div>
         <button type="submit" class="btn btn-danger" style="width:150px">Remove</button>
         <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px">

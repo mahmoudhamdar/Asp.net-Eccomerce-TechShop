@@ -7,6 +7,8 @@ using WebApplication1.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using Microsoft.AspNetCore.Http.HttpResults;
+using WebApplication1.Areas.Admin.Models;
+
 namespace WebApplication1.Repo
 {
     public class Repo<T> : IRepo<T> where T : class
@@ -20,7 +22,7 @@ namespace WebApplication1.Repo
         {
             _db = db;
             dbSet = _db.Set<T>();
-            _db.Products.Include(u => u.Category);
+            _db.Products.Include(p => p.Category).Include(p => p.CategoryId);
 
         }
         public void Add(T entity)
@@ -35,16 +37,15 @@ namespace WebApplication1.Repo
             IQueryable<T> query = dbSet;
             if (!string.IsNullOrEmpty(includeProperties))
             {
-                foreach (var includeProp in includeProperties
-                             .Split(new []{','},StringSplitOptions.RemoveEmptyEntries))
+                foreach (var includeProp in includeProperties.Split(new []{','},
+                             StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeProp);
                 }
             }
 
             T? q = query.Where(filter).FirstOrDefault();
-            if (q == null)
-                throw new ArgumentNullException();
+           
             return q;
         }
 
@@ -53,14 +54,14 @@ namespace WebApplication1.Repo
             IQueryable<T> query = dbSet;
             if (!string.IsNullOrEmpty(includeProperties))
             {
-                foreach (var includeProp in includeProperties
-                             .Split(new []{','},StringSplitOptions.RemoveEmptyEntries))
+                  foreach (var includeProp in includeProperties.Split(new []{','},StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeProp);
                 }
             }
             return query.ToList();
         }
+
 
         public void Remove(T entity)
         {

@@ -1,4 +1,10 @@
 @model ProductVM
+
+
+
+<form method="post" asp-action="ProductUpsert" enctype="multipart/form-data">
+            <input asp-for="Product.ProductID" hidden/>
+            <input asp-for="Product.ImgUrl" hidden/>
 <div class="card shadow border-0 my-4">
     <div class="card-header bg-secondary bg-gradient ml-0 py-3">
         <div class="col-12 text-center">
@@ -6,9 +12,7 @@
         </div>
     </div>
     <div class="card-body p-4">
-        <form method="post" class="row" enctype="multipart/form-data">
-            <input asp-for="Product.ProductID" hidden/>
-            <input asp-for="Product.ImgUrl" hidden/>
+       
             <div class="row">
                 <div class="col-10">
                     <div class="border p-3 ">
@@ -20,7 +24,7 @@
                         </div>
                         <div class="py-2 col-12">
                             <label asp-for="Product.Description"></label>
-                            <textarea asp-for="Product.Description" class="form-control"></textarea>s
+                            <textarea asp-for="Product.Description" class="form-control"></textarea>
 
                         </div>
                         <div class="mb-3">
@@ -28,33 +32,34 @@
                             <input asp-for="Product.Price" class="form-control"/>
                             <span asp-validation-for="Product.Price" class="text-danger"></span>
                         </div>
-                        <div class="form-floating py-2 col-12">
-                            <select asp-for="Product.CategoryId" asp-items="@Model.CategoryList">
+                        <div class=" py-2 col-12">
+                            <label asp-for="@Model.Product.CategoryId"></label>
+                           
+                            <select asp-for="@Model.Product.CategoryId" asp-items="@Model.CategoryList" class="form-select">
                                 <option disabled selected>--Select Category--</option>
                             </select>
-                            <label asp-for="Product.CategoryId"></label>
-                            <input asp-for="Product.CategoryId" class="form-control"/>
-                            <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
                             <label  asp-for="Product.ImgUrl"></label>
-                            <input type="file" name="file" class="form-control border-0 shadow"/>
+                            <input type="file" name="file"  class="form-control border-0 shadow"/>
                         </div>
                         <div class="col-6 col-md-3">
                             @if (Model.Product.ProductID != 0)
                             {
-                            <button type="submit" class="btn btn-primary form-control">Update</button>
+                                <button type="submit" class="btn btn-primary form-control">Update</button>
+                                <a asp-controller="Product" asp-action="Index" class="btn btn-secondary form-control" >
+                                    Back to List
+                                </a>
                             }
                             else
                             {
-                            <button type="submit" class="btn btn-primary form-control">Create</button>
+                                <button type="submit" class="btn btn-primary form-control">Create</button>
+                                <a asp-controller="Product" asp-action="Index" class="btn btn-secondary form-control" >
+                                    Back to List
+                                </a>
                             }
                         </div>
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
-                            <a asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="width:150px">
-                                Back to List
-                            </a></div>
+                       
                     </div>
                 </div>
                 <div class="col-2">
@@ -63,14 +68,5 @@
                 </div>
             </div>
            
-        </form></div></div>
-        @section Scripts
-        {
-            <script>
-                tinymce.init({
-                    selector: 'textarea',
-                    plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss markdown',
-                    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-                    });
-            </script>
-        }
+        </div></div>
+      </form>

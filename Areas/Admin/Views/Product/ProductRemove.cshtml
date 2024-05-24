@@ -3,7 +3,7 @@
 
 
 <form method="post" asp-action="ProductRemove">
-    <input asp-for="ProductID" />
+    <input asp-for="ProductID" hidden />
     <div class="border p-3 mt-4">
         <div class="row pb-2">
             <h2 class="text-primary">Remove the Product</h2>
@@ -18,6 +18,10 @@
             <label asp-for="Description"></label>
             <input asp-for="Description" disabled class="form-control" />
         </div>
+          <div class="mb-3">
+                    <label asp-for="Price"></label>
+                    <input asp-for="Price" disabled class="form-control" />
+                </div>
         <button type="submit" class="btn btn-danger" style="width:150px">Remove</button>
         <a asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="width:150px">
             Cancel

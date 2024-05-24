@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication1.Models;
 
 namespace WebApplication1.Areas.Admin.Models
 {
@@ -17,6 +19,9 @@ namespace WebApplication1.Areas.Admin.Models
         [Range(1, 100, ErrorMessage = "Display Order must be between 1 and 100 only!!")]
         public int DisplayOrder { get; set; }
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
+        
+        [InverseProperty("Category")]
+        public ICollection<Product> Products { get; set; }
         
     }
 }

@@ -18,7 +18,7 @@ function loadDataTables(){
                 { data: 'salary',"width":"15%" },
                 { data: 'office',"width":"15%" }
             ]
-        });
+        })
 }
 
 

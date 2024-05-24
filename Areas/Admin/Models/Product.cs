@@ -20,13 +20,12 @@ namespace WebApplication1.Models
         public decimal Price { get; set; }
         [ValidateNever]
         public string ImgUrl { get; set; } = "";
-        [Required]
-        [Display(Name = "Category")]
+       
         public int CategoryId;
 
         [ForeignKey("CategoryId")]
         [ValidateNever]
-        public Category Category { get; set; }
+        public Category Category { get; set; } 
     }
     
 }
