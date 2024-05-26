@@ -33,10 +33,8 @@ namespace WebApplication1.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult CategoryAdd(Category category)
         {
-            if (category.Name.Equals(category.DisplayOrder))
-            {
-                ModelState.AddModelError("Name", "the Name can not be the same sa the Description");
-            }
+           
+            
             if (ModelState.IsValid)
             {
 
@@ -55,8 +53,7 @@ namespace WebApplication1.Areas.Admin.Controllers
                 return NotFound();
             }
             Category? productfromdb = _unitofwork.categoryRepo.Get(u => u.CategoryId == id);
-            if (productfromdb == null)
-                NotFound();
+            
             return View(productfromdb);
         }
         [HttpPost]
@@ -76,8 +73,7 @@ namespace WebApplication1.Areas.Admin.Controllers
             if (id == null || id == 0)
                 return NotFound();
             Category? productfromdb = _unitofwork.categoryRepo.Get(p => p.CategoryId == id);
-            if (productfromdb == null)
-                return NotFound();
+          
             return View(productfromdb);
         }
         [HttpPost]

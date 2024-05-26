@@ -32,12 +32,20 @@ namespace WebApplication1.Repo
 
         }
 
-        public T Get(Expression<Func<T, bool>> filter,string? includeProperties=null)
+        public T Get(Expression<Func<T, bool>>? filter, string? includeProperties = null, bool tracked = false)
         {
-            IQueryable<T> query = dbSet;
+            IQueryable<T> query;
+            if (tracked)
+            {
+                 query = dbSet;
+            }
+            else
+            {   query = dbSet.AsNoTracking();
+            
+            }
             if (!string.IsNullOrEmpty(includeProperties))
             {
-                foreach (var includeProp in includeProperties.Split(new []{','},
+                foreach (var includeProp in includeProperties.Split(new[] { ',' },
                              StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeProp);
@@ -45,13 +53,18 @@ namespace WebApplication1.Repo
             }
 
             T? q = query.Where(filter).FirstOrDefault();
-           
+
             return q;
         }
 
-        public IEnumerable<T> GetAll(string? includeProperties=null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter=null,string? includeProperties=null)
         {
             IQueryable<T> query = dbSet;
+            if (filter!=null)
+            {
+                query.Where(filter);
+            }
+          
             if (!string.IsNullOrEmpty(includeProperties))
             {
                   foreach (var includeProp in includeProperties.Split(new []{','},StringSplitOptions.RemoveEmptyEntries))

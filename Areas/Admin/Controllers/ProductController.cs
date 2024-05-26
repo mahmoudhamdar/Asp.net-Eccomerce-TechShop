@@ -1,16 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
-using WebApplication1.Data;
 using WebApplication1.Models;
-
-using WebApplication1.Repo;
 using WebApplication1.Repo.IRepo;
 using WebApplication1.ViewModels;
 
@@ -36,7 +28,7 @@ namespace WebApplication1.Areas.Admin.Controllers
 
             return View(objProductList);
         }
-        //Details
+        
        
        
         //Update Or Add
@@ -67,7 +59,10 @@ namespace WebApplication1.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult ProductUpsert(ProductVM productVm,IFormFile? file)
         {
-
+            if (file==null && productVm.Product.ImgUrl==null)
+            {
+                return View(productVm);
+            }
             if (ModelState.IsValid)
             {
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
@@ -91,11 +86,6 @@ namespace WebApplication1.Areas.Admin.Controllers
 
                 if (productVm.Product.ProductID==0)
                 {
-                    if (productVm.Product.CategoryId==0)
-                    {
-                        
-                    }
-                    productVm.Product.CategoryId = 1;
                     _unitofwork.productRepo.Add(productVm.Product);
                     TempData["success"] =   "A new " + productVm.Product.Name + " is Added";
                 }

@@ -17,11 +17,11 @@ namespace WebApplication1.Models
         public string Name { get; set; } = "";
         public string Description { get; set; } = "";
         [Required]
-        public decimal Price { get; set; }
+        public double Price { get; set; }
         [ValidateNever]
         public string ImgUrl { get; set; } = "";
-       
-        public int CategoryId;
+       [ValidateNever]
+        public int CategoryId { get; set; }
 
         [ForeignKey("CategoryId")]
         [ValidateNever]
