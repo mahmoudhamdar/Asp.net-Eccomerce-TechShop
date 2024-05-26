@@ -1417,12 +1417,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\images\\product\\Hyper_mouse.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\Hyper_mouse.jpg"
+    },
+    {
       "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\images\\product\\download (1).jpg",
       "PackagePath": "staticwebassets\\images\\product\\download (1).jpg"
     },
     {
       "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\images\\product\\download.jpg",
       "PackagePath": "staticwebassets\\images\\product\\download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\images\\product\\headphones.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\headphones.jpg"
     },
     {
       "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\images\\product\\https___hybrismediaprod.blob.core.windows.net_sys-master-phoenix-images-container_h61_h66_9705254158366_huntsman-v3-pro-mini-2-500x500.png",
@@ -1437,20 +1445,8 @@
       "PackagePath": "staticwebassets\\images\\product\\https___hybrismediaprod.blob.core.windows.net_sys-master-phoenix-images-container_hf7_h5a_9640099119134_blackwidow-v4-75-black-2-500x500.png"
     },
     {
-      "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\images\\product\\hyperx_alloy_origins_naruto_orange_1_main_900x.webp",
-      "PackagePath": "staticwebassets\\images\\product\\hyperx_alloy_origins_naruto_orange_1_main_900x.webp"
-    },
-    {
-      "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\images\\product\\hyperx_cloud_iii_wireless_red_77z46aa_main_1_900x.webp",
-      "PackagePath": "staticwebassets\\images\\product\\hyperx_cloud_iii_wireless_red_77z46aa_main_1_900x.webp"
-    },
-    {
-      "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\images\\product\\images.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\images.jpg"
-    },
-    {
-      "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\images\\product\\shopping.webp",
-      "PackagePath": "staticwebassets\\images\\product\\shopping.webp"
+      "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\images\\product\\krakens.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\krakens.jpg"
     },
     {
       "Id": "C:\\Users\\abbas\\RiderProjects\\Asp.netEccomerce\\wwwroot\\index.html",
