@@ -680,3 +680,6 @@ C:\Users\abbas\RiderProjects\Asp.netEccomerce\bin\Debug\net8.0\runtimes\win\lib\
 C:\Users\abbas\RiderProjects\Asp.netEccomerce\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\abbas\RiderProjects\Asp.netEccomerce\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\abbas\RiderProjects\Asp.netEccomerce\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\abbas\RiderProjects\Asp.netEccomerce\bin\Debug\net8.0\Areas\Admin\Views\dist\js\.eslintrc.json
+C:\Users\abbas\RiderProjects\Asp.netEccomerce\bin\Debug\net8.0\Areas\Admin\Views\build\config\.eslintrc.json
+C:\Users\abbas\RiderProjects\Asp.netEccomerce\bin\Debug\net8.0\Areas\Admin\Views\build\npm\.eslintrc.json

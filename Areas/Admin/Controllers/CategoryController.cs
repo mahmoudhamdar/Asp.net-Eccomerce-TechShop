@@ -52,9 +52,9 @@ namespace WebApplication1.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            Category? productfromdb = _unitofwork.categoryRepo.Get(u => u.CategoryId == id);
+            Category categoryfromdb = _unitofwork.categoryRepo.Get(u => u.CategoryId == id);
             
-            return View(productfromdb);
+            return View(categoryfromdb);
         }
         [HttpPost]
         public IActionResult CategoryEdit(Category category)

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+ 
 </head>
 
 <body>
@@ -61,8 +62,16 @@
                                asp-action="Index">Cart</a>
                             
                         </li>}
-                        
-                        
+                         @if (User.IsInRole(Utility.Role_Admin))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Dashboard"
+                                   asp-action="Index">DashBoard</a>
+
+                            </li>
+                        }
+
+
                     </ul>
                     <partial name="_LoginPartial"/>
                 </div>
@@ -84,6 +93,8 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    
+
 </body>
 
 </html>
