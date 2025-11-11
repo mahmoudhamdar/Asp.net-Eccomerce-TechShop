@@ -62,8 +62,7 @@ namespace WebApplication1.Data
                 new Company
                     { CompanyId = 3, Name = "Legion", PhoneNumber = "02123599",City = "Saida",StreetAddress = "" }
             );
-           
-            
+
         }
       
 
